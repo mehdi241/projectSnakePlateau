@@ -1,0 +1,10 @@
+C:\Users\Lucien.Flr\Desktop\premierSemestre\m426\SnakePlateau\SnakePlateau\bin\Debug\SnakePlateau.exe.config
+C:\Users\Lucien.Flr\Desktop\premierSemestre\m426\SnakePlateau\SnakePlateau\bin\Debug\SnakePlateau.exe
+C:\Users\Lucien.Flr\Desktop\premierSemestre\m426\SnakePlateau\SnakePlateau\bin\Debug\SnakePlateau.pdb
+C:\Users\Lucien.Flr\Desktop\premierSemestre\m426\SnakePlateau\SnakePlateau\obj\Debug\SnakePlateau.csproj.AssemblyReference.cache
+C:\Users\Lucien.Flr\Desktop\premierSemestre\m426\SnakePlateau\SnakePlateau\obj\Debug\SnakePlateau.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lucien.Flr\Desktop\premierSemestre\m426\SnakePlateau\SnakePlateau\obj\Debug\SnakePlateau.Properties.Resources.resources
+C:\Users\Lucien.Flr\Desktop\premierSemestre\m426\SnakePlateau\SnakePlateau\obj\Debug\SnakePlateau.csproj.GenerateResource.cache
+C:\Users\Lucien.Flr\Desktop\premierSemestre\m426\SnakePlateau\SnakePlateau\obj\Debug\SnakePlateau.csproj.CoreCompileInputs.cache
+C:\Users\Lucien.Flr\Desktop\premierSemestre\m426\SnakePlateau\SnakePlateau\obj\Debug\SnakePlateau.exe
+C:\Users\Lucien.Flr\Desktop\premierSemestre\m426\SnakePlateau\SnakePlateau\obj\Debug\SnakePlateau.pdb

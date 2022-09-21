@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace SnakePlateau
 {
     internal class Case : FlowLayoutPannel
-{
+    {
         int index;
         string effect;
 
