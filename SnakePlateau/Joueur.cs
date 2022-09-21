@@ -56,11 +56,8 @@ namespace Joueur
             //Random dé 6 faces
             int dice = rnd.Next(1, 7);
 
-            for (int i = 0; i < 7; i++)
-            {
-                Step = dice;
-                position = position + Step;
-            }
+            Step = dice;
+            Position += Step;
         }
     }
 }
