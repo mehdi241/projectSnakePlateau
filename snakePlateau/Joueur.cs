@@ -26,7 +26,7 @@ namespace Joueur
             _number = number;
         }
 
-        public Joueur() : this('Gary', 4, 6, 1) { }
+        public Joueur() : this("Gary", 4, 6, 1) { }
 
         public string Name
         {

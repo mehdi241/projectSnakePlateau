@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace SnakePlateau
 {
-    internal class Case : FlowLayoutPannel
+    internal class Case : FlowLayoutPanel
     {
         int index;
         string effect;

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "snakePlateau", "snakePlateau\snakePlateau.csproj", "{BEC836F6-8969-4048-9DDA-70378F05B6B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "snakePlateau", "snakePlateau\snakePlateau.csproj", "{09682065-5695-46CC-A89F-BD2416152CF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BEC836F6-8969-4048-9DDA-70378F05B6B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BEC836F6-8969-4048-9DDA-70378F05B6B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BEC836F6-8969-4048-9DDA-70378F05B6B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BEC836F6-8969-4048-9DDA-70378F05B6B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09682065-5695-46CC-A89F-BD2416152CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09682065-5695-46CC-A89F-BD2416152CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09682065-5695-46CC-A89F-BD2416152CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09682065-5695-46CC-A89F-BD2416152CF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
