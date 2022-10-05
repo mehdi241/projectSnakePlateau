@@ -12,10 +12,33 @@ namespace snakePlateau
 {
     public partial class frmSnakeBoard : Form
     {
-        Joueur j = new Joueur("Jeff");
+        CreationJoueur cj;
         public frmSnakeBoard()
         {
             InitializeComponent();
+            cj = new CreationJoueur();
+        }
+        
+        public void startGame()
+        {
+            DialogResult response = cj.ShowDialog();
+            if (response == DialogResult.OK)
+            {
+                // Assignation des images au joueurs
+                Joueur j = new Joueur("Jeff"); // debug
+                bool victory = false;
+                lblJoueurActu.Text = j.Name;
+            }
+        }
+
+        private void frmSnakeBoard_Load(object sender, EventArgs e)
+        {
+            startGame();
+        }
+
+        private void btnQuit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

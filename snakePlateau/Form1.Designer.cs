@@ -83,6 +83,7 @@
             this.btnQuit.TabIndex = 5;
             this.btnQuit.Text = "Quitter";
             this.btnQuit.UseVisualStyleBackColor = true;
+            this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
             // 
             // btnReset
             // 
@@ -119,6 +120,7 @@
             this.MaximizeBox = false;
             this.Name = "frmSnakeBoard";
             this.Text = "Jeu de Plateau Snake";
+            this.Load += new System.EventHandler(this.frmSnakeBoard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
