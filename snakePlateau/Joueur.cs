@@ -22,12 +22,12 @@ namespace snakePlateau
 
 
 
-        public Joueur(string name, int step, int position, int number)
+        public Joueur(string name, int step, int position, int index)
         {
             _name = name;
             _step = step;
             _position = position;
-            _number = number;
+            _number = index;
         }
         public Joueur()
         {
@@ -43,6 +43,7 @@ namespace snakePlateau
                 ID = nextIndex;
             }
         }
+        // Encapsulation Champs
         public int ID { 
             get; 
             private set; 
@@ -70,6 +71,7 @@ namespace snakePlateau
             get { return _number; }
             set { _number = value; }
         }
+        // Fonction de mouvement
         public int Move()
         {
             //Random dé 6 faces
@@ -82,10 +84,7 @@ namespace snakePlateau
 
             return Position;
         }
-
-
-        
-
+        // Supprimer un Joueur
         public void Dispose()
         {
             lock (Lock)
@@ -93,7 +92,7 @@ namespace snakePlateau
                 UsedCounter[ID] = false;
             }
         }
-
+        // Index Range
         private static int GetAvailableIndex()
         {
             for (int i = 0; i < UsedCounter.Count; i++)
@@ -107,52 +106,3 @@ namespace snakePlateau
         }
     }
 }
-    /*public partial class Joueur : IDisposable
-    {
-    }*/
-    /*public class Robot : IDisposable
-    {
-        private static List<bool> UsedCounter = new List<bool>();
-        private static object Lock = new object();
-
-        public int ID { get; private set; }
-
-        public Robot()
-        {
-
-            lock (Lock)
-            {
-                int nextIndex = GetAvailableIndex();
-                if (nextIndex == -1)
-                {
-                    nextIndex = UsedCounter.Count;
-                    UsedCounter.Add(true);
-                }
-
-                ID = nextIndex;
-            }
-        }
-
-        public void Dispose()
-        {
-            lock (Lock)
-            {
-                UsedCounter[ID] = false;
-            }
-        }
-
-
-        private int GetAvailableIndex()
-        {
-            for (int i = 0; i < UsedCounter.Count; i++)
-            {
-                if (UsedCounter[i] == false)
-                {
-                    return i;
-                }
-            }
-
-            // Nothing available.
-            return -1;
-        }*/
-    }
