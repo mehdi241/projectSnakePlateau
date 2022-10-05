@@ -10,13 +10,17 @@ using System.Windows.Forms;
 
 namespace snakePlateau
 {
-    partial class Joueur
+    partial class Joueur : IDisposable
     {
         Random rnd = new Random();
         private string _name;
         private int _step;
         private int _position;
         private int _number;
+        private static List<bool> UsedCounter = new List<bool>();
+        private static object Lock = new object();
+
+
 
         public Joueur(string name, int step, int position, int number)
         {
@@ -25,9 +29,24 @@ namespace snakePlateau
             _position = position;
             _number = number;
         }
-
-        public Joueur() : this("Gary", 4, 6, 1) { }
-
+        public Joueur()
+        {
+            //Creation d'id pour l'ordre des joueurs
+            lock (Lock)
+            {
+                int nextIndex = GetAvailableIndex();
+                if (nextIndex == -1)
+                {
+                    nextIndex = UsedCounter.Count;
+                    UsedCounter.Add(true);
+                }
+                ID = nextIndex;
+            }
+        }
+        public int ID { 
+            get; 
+            private set; 
+        }
         public string Name
         {
             get { return _name; }
@@ -63,5 +82,77 @@ namespace snakePlateau
 
             return Position;
         }
+
+
+        
+
+        public void Dispose()
+        {
+            lock (Lock)
+            {
+                UsedCounter[ID] = false;
+            }
+        }
+
+        private static int GetAvailableIndex()
+        {
+            for (int i = 0; i < UsedCounter.Count; i++)
+            {
+                if (!UsedCounter[i])
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
     }
 }
+    /*public partial class Joueur : IDisposable
+    {
+    }*/
+    /*public class Robot : IDisposable
+    {
+        private static List<bool> UsedCounter = new List<bool>();
+        private static object Lock = new object();
+
+        public int ID { get; private set; }
+
+        public Robot()
+        {
+
+            lock (Lock)
+            {
+                int nextIndex = GetAvailableIndex();
+                if (nextIndex == -1)
+                {
+                    nextIndex = UsedCounter.Count;
+                    UsedCounter.Add(true);
+                }
+
+                ID = nextIndex;
+            }
+        }
+
+        public void Dispose()
+        {
+            lock (Lock)
+            {
+                UsedCounter[ID] = false;
+            }
+        }
+
+
+        private int GetAvailableIndex()
+        {
+            for (int i = 0; i < UsedCounter.Count; i++)
+            {
+                if (UsedCounter[i] == false)
+                {
+                    return i;
+                }
+            }
+
+            // Nothing available.
+            return -1;
+        }*/
+    }
