@@ -16,31 +16,24 @@ namespace snakePlateau
         private string _name;
         private int _step;
         private int _position;
-        private int _number;
         private static List<bool> UsedCounter = new List<bool>();
         private static object Lock = new object();
 
 
 
-        public Joueur(string name, int step, int position, int index)
+        public Joueur(string name)
         {
             _name = name;
-            _step = step;
-            _position = position;
-            _number = index;
-        }
-        public Joueur()
-        {
-            //Creation d'id pour l'ordre des joueurs
+            _position = 0;
             lock (Lock)
             {
-                int nextIndex = GetAvailableIndex();
-                if (nextIndex == -1)
+                int index = GetAvailableIndex();
+                if (index == -1)
                 {
-                    nextIndex = UsedCounter.Count;
+                    index = UsedCounter.Count;
                     UsedCounter.Add(true);
                 }
-                ID = nextIndex;
+                ID = index;
             }
         }
         // Encapsulation Champs
@@ -64,12 +57,6 @@ namespace snakePlateau
         {
             get { return _position; }
             set { _position = value; }
-        }
-
-        public int Number
-        {
-            get { return _number; }
-            set { _number = value; }
         }
         // Fonction de mouvement
         public int Move()

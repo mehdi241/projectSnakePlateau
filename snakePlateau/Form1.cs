@@ -10,9 +10,10 @@ using System.Windows.Forms;
 
 namespace snakePlateau
 {
-    public partial class Form1 : Form
+    public partial class frmSnakeBoard : Form
     {
-        public Form1()
+        Joueur j = new Joueur("Jeff");
+        public frmSnakeBoard()
         {
             InitializeComponent();
         }
