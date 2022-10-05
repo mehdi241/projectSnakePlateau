@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace snakePlateau
+{
+    public partial class CreationJoueur : Form
+    {
+        public CreationJoueur()
+        {
+            InitializeComponent();
+        }
+    }
+}

@@ -57,15 +57,16 @@
             this.domainUpDown1.TabIndex = 2;
             this.domainUpDown1.Text = "domainUpDown1";
             // 
-            // UserControl1
+            // composant_joueur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.domainUpDown1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
-            this.Name = "UserControl1";
+            this.Name = "composant_joueur";
             this.Size = new System.Drawing.Size(410, 27);
+            this.Load += new System.EventHandler(this.composant_joueur_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

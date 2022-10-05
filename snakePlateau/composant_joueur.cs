@@ -16,5 +16,10 @@ namespace snakePlateau
         {
             InitializeComponent();
         }
+
+        private void composant_joueur_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
