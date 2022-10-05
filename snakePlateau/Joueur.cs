@@ -51,13 +51,17 @@ namespace snakePlateau
             get { return _number; }
             set { _number = value; }
         }
-        public void Move()
+        public int Move()
         {
             //Random dé 6 faces
             int dice = rnd.Next(1, 7);
+            //Position actuelle
+            int current_pos = Position;
 
-            Step = dice;
-            Position += Step;
+            //Déplacement du joueur
+            Position = current_pos + dice;
+
+            return Position;
         }
     }
 }
