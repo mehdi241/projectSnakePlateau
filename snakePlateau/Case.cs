@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SnakePlateau
+namespace snakePlateau
 {
     internal class Case : FlowLayoutPanel
     {
