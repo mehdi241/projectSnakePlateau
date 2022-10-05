@@ -40,5 +40,10 @@ namespace snakePlateau
         {
             Application.Exit();
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            // Reset Joueurs et Joueurs.Position
+        }
     }
 }

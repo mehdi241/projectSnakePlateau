@@ -52,9 +52,8 @@
             this.lblJoueurActu.AutoSize = true;
             this.lblJoueurActu.Location = new System.Drawing.Point(109, 593);
             this.lblJoueurActu.Name = "lblJoueurActu";
-            this.lblJoueurActu.Size = new System.Drawing.Size(35, 13);
+            this.lblJoueurActu.Size = new System.Drawing.Size(0, 13);
             this.lblJoueurActu.TabIndex = 2;
-            this.lblJoueurActu.Text = "label2";
             // 
             // btnTour
             // 
@@ -93,6 +92,7 @@
             this.btnReset.TabIndex = 6;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // pictureBox1
             // 
