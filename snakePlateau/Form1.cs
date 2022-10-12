@@ -44,6 +44,15 @@ namespace snakePlateau
         private void btnReset_Click(object sender, EventArgs e)
         {
             // Reset Joueurs et Joueurs.Position
+            
+        }
+
+        private void btnTour_Click(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            int step = rnd.Next(1, 7);
+
+            lblResultDe.Text += " " + step.ToString() + " ";
         }
     }
 }

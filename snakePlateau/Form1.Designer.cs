@@ -35,6 +35,7 @@
             this.btnQuit = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.case1 = new snakePlateau.Case();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,6 +65,7 @@
             this.btnTour.TabIndex = 3;
             this.btnTour.Text = "Tirer Dé";
             this.btnTour.UseVisualStyleBackColor = true;
+            this.btnTour.Click += new System.EventHandler(this.btnTour_Click);
             // 
             // lblResultDe
             // 
@@ -104,11 +106,21 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // case1
+            // 
+            this.case1.Effect = "";
+            this.case1.Index = 0;
+            this.case1.Location = new System.Drawing.Point(514, 424);
+            this.case1.Name = "case1";
+            this.case1.Size = new System.Drawing.Size(84, 64);
+            this.case1.TabIndex = 7;
+            // 
             // frmSnakeBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(764, 741);
+            this.Controls.Add(this.case1);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.lblResultDe);
@@ -136,6 +148,7 @@
         private System.Windows.Forms.Label lblResultDe;
         private System.Windows.Forms.Button btnQuit;
         private System.Windows.Forms.Button btnReset;
+        private Case case1;
     }
 }
 
