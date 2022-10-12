@@ -13,7 +13,8 @@ namespace snakePlateau
     public partial class frmSnakeBoard : Form
     {
         CreationJoueur cj;
-        Joueur j0 = new Joueur();
+        Joueur j0 = new Joueur(); // debug
+        int nbJoueurs = 0;
         public frmSnakeBoard()
         {
             InitializeComponent();
@@ -27,6 +28,7 @@ namespace snakePlateau
             {
                 // Assignation des images au joueurs
                 //Joueur j = new Joueur("Jeff"); // debug
+                //nbJoueurs = cj.nbJoueurs;
                 bool victory = false;
             }
         }
@@ -44,6 +46,7 @@ namespace snakePlateau
         private void btnReset_Click(object sender, EventArgs e)
         {
             // Reset Joueurs et Joueurs.Position
+            j0.Position = 0;
             
         }
 
@@ -53,6 +56,7 @@ namespace snakePlateau
             int step = rnd.Next(1, 7);
 
             lblResultDe.Text += " " + step.ToString() + " ";
+            j0.Step = step; // debug
         }
     }
 }
