@@ -14,6 +14,7 @@ namespace snakePlateau
     {
         int _index;
         string _effect;
+        static List<Case> cases =  new List<Case>();
 
         public int Index { get => _index; set => _index = value; }
         public string Effect { get => _effect; set => _effect = value; }
@@ -22,29 +23,11 @@ namespace snakePlateau
         {
             Index = index;
             Effect = effect;
+            cases.Add(this);
         }
-        public void case_effect(int case_id)
-        {
-            List<int> effects = new List<int>();
-            List<int> snakes = new List<int>();
-            List<int> ladders = new List<int>();
 
-            for (int i = 0; i < effects.Count; i++)
-            {
-                if (case_id == effects[i])
-                {
-                    //Effect Check
-                    if (case_id == snakes[i])
-                    {
-                        //Move to head of the snake
-
-                    }
-                    else if (case_id == ladders[i])
-                    {
-                        //Move to the top of the ladder
-                    }
-                }
-            }
+        public Case() : this(0, "")
+        {  
         }
     }
 }
