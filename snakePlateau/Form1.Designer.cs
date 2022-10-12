@@ -97,9 +97,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::snakePlateau.Properties.Resources.snakeBoard;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(17, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(735, 535);
+            this.pictureBox1.Size = new System.Drawing.Size(726, 535);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -108,7 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(764, 741);
+            this.ClientSize = new System.Drawing.Size(755, 741);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.lblResultDe);
