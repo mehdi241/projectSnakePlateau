@@ -129,6 +129,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dragon_red.jpg" />
+=======
+    <None Include="Resources\idsCaseAEffet.txt" />
+>>>>>>> 1ffd6e299b0582413030feff93bb1b5db4a9c133
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

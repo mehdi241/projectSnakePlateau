@@ -27,8 +27,13 @@ namespace snakePlateau
             if (response == DialogResult.OK)
             {
                 // Assignation des images au joueurs
+<<<<<<< HEAD
                 //Joueur j = new Joueur("Jeff"); // debug
                 //nbJoueurs = cj.nbJoueurs;
+=======
+                Joueur j = new Joueur("Jeff"); // debug
+              
+>>>>>>> 1ffd6e299b0582413030feff93bb1b5db4a9c133
                 bool victory = false;
             }
         }
@@ -58,5 +63,7 @@ namespace snakePlateau
             lblResultDe.Text += " " + step.ToString() + " ";
             j0.Step = step; // debug
         }
+
+
     }
 }
