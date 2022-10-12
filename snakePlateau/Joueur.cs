@@ -10,9 +10,10 @@ using System.Windows.Forms;
 
 namespace snakePlateau
 {
-    partial class Joueur : IDisposable
+    internal class Joueur : IDisposable
     {
         Random rnd = new Random();
+        static List<Joueur> joueurs = new List<Joueur>();
         private string _name;
         private int _step;
         private int _position;
@@ -35,6 +36,7 @@ namespace snakePlateau
                 }
                 ID = index;
             }
+            joueurs.Add(this);
         }
         // Encapsulation Champs
         public int ID { 
