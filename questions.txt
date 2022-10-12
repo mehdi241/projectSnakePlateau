@@ -1,0 +1,10 @@
+Quel animal chasse en meute ?;le loup;l'ours;le sanglier
+Quel est la particularité des ourang-outan ?;Il a le pelage orange;Il a un comportement agressif;Il est plus grand
+Quel est l'animal le plus rapide en course ?;le guépard;le lion;la gazelle
+Quel animal hiberne tout l'hiver ?;l'ours;la girafe;le cerf
+Quel est le nom de l'espèce du serpent le plus long ?;l'anaconda;le boa;le python
+Quel est la taille du cou d'une girafe adulte ?;2m40;4m30;1m90
+Quel est la plus grande taille atteinte par une baleine bleue ?;33m50;27m;30m20
+Quel est le poids d'un ours polaire mâle adulte ?;450kg;150kg;250kg
+Quel est le nom du petit de l'écureuil;l'écureuillons;l'écureuilleau;l'écureuil
+Combien de pattes possède la plus grande espèce de milles-pattes ?;750;400;40

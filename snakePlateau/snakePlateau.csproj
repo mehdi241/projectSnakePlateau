@@ -116,6 +116,19 @@
     <None Include="Resources\snakeBoard.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\pig_rose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mouse_blue.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monkey_brown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frog_green.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragon_red.jpg" />
     <None Include="Resources\idsCaseAEffet.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

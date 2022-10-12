@@ -25,7 +25,7 @@ namespace snakePlateau
 
         private void nudJoueursNombre_ValueChanged(object sender, EventArgs e)
         {
-            //nbJoueurs = nudJoueursNombre.Value; // Non fonctionnel
+           // nbJoueurs = nudJoueursNombre.Value; // Non fonctionnel
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
