@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,7 +16,10 @@ namespace snakePlateau
         public composant_joueur()
         {
             InitializeComponent();
+        
         }
+
+        public string Nom { get => textBox1.Text; set => textBox1.Text = value; }
 
         private void composant_joueur_Load(object sender, EventArgs e)
         {

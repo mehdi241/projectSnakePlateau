@@ -26,7 +26,6 @@ namespace snakePlateau
             {
                 // Assignation des images au joueurs
                 Joueur j = new Joueur("Jeff"); // debug
-              
                 bool victory = false;
                 lblJoueurActu.Text = j.Name;
             }

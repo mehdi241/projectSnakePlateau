@@ -34,7 +34,8 @@ namespace snakePlateau
             for(int i = 0; i< Convert.ToInt32(a.Tag); i++)
             {
                 composant_joueur composant_Joueur = new composant_joueur();
-                composant_Joueur.Location = new Point(100,30 + i*60);
+                composant_Joueur.Location = new Point(250,30 + i*60);
+                composant_Joueur.Nom = $"Joueur {i+1}";
                 this.Controls.Add(composant_Joueur);
             }   
         }
