@@ -13,6 +13,7 @@ namespace snakePlateau
     public partial class frmSnakeBoard : Form
     {
         CreationJoueur cj;
+        Joueur j0 = new Joueur();
         public frmSnakeBoard()
         {
             InitializeComponent();
@@ -25,9 +26,8 @@ namespace snakePlateau
             if (response == DialogResult.OK)
             {
                 // Assignation des images au joueurs
-                Joueur j = new Joueur("Jeff"); // debug
+                //Joueur j = new Joueur("Jeff"); // debug
                 bool victory = false;
-                lblJoueurActu.Text = j.Name;
             }
         }
 

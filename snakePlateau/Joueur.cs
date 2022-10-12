@@ -23,8 +23,8 @@ namespace snakePlateau
 
         public Joueur(string name)
         {
-            _name = name;
-            _position = 0;
+            Name = name;
+            Position = 0;
             lock (Lock)
             {
                 int index = GetAvailableIndex();
@@ -36,6 +36,11 @@ namespace snakePlateau
                 ID = index;
             }
         }
+
+        public Joueur() : this("test")
+        {
+        }
+        
         // Encapsulation Champs
         public int ID { 
             get; 
