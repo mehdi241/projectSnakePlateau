@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,7 @@ namespace snakePlateau
         Random rnd = new Random();
         static List<Joueur> joueurs = new List<Joueur>();
         private string _name;
+        private int _number;
         private int _step;
         private int _position;
         private static List<bool> UsedCounter = new List<bool>();
@@ -22,7 +24,7 @@ namespace snakePlateau
 
 
 
-        public Joueur(string name)
+        public Joueur(string name, int number)
         {
             Name = name;
             Position = 0;
@@ -39,7 +41,7 @@ namespace snakePlateau
             joueurs.Add(this);
         }
 
-        public Joueur() : this("test")
+        public Joueur() : this("test", 0)
         {
         }
         
@@ -54,6 +56,8 @@ namespace snakePlateau
             set { _name = value; }
         }
 
+        public int Number { get => _number; set => _number = value; }
+
         public int Step
         {
             get { return _step; }
@@ -65,6 +69,7 @@ namespace snakePlateau
             get { return _position; }
             set { _position = value; }
         }
+
         // Fonction de mouvement
         public int Move()
         {

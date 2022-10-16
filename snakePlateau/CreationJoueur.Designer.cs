@@ -79,6 +79,7 @@
             this.btnStart.TabIndex = 3;
             this.btnStart.Text = "Commencer";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // CreationJoueur
             // 

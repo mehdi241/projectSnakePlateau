@@ -19,7 +19,11 @@ namespace snakePlateau
 
         private void composant_joueur_Load(object sender, EventArgs e)
         {
+        }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            // Récupérer les noms des joueurs
         }
     }
 }
