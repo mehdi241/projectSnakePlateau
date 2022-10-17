@@ -14,6 +14,7 @@ namespace snakePlateau
     {
         public decimal nbJoueurs;
         public string playerName;
+        List<string> image = new List<string>();
         public CreationJoueur()
         {
             InitializeComponent();
@@ -25,14 +26,16 @@ namespace snakePlateau
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
+            
             RadioButton a = sender as RadioButton;
             for(int i = 0; i< Convert.ToInt32(a.Tag); i++)
             {
                 composant_joueur composant_Joueur = new composant_joueur();
                 composant_Joueur.Location = new Point(250,30 + i*60);
                 composant_Joueur.Nom = $"Joueur {i+1}";
+                composant_Joueur.Img = "";
                 this.Controls.Add(composant_Joueur);
-                //string name = composant_Joueur.textBox1.Text; // Je ne sais pas comment récupérer le text du textBox de la class composant_joueur /* Mehdi Calanducci
+                string name = composant_Joueur.Nom;
             }
             nbJoueurs = Convert.ToInt32(a.Tag);
         }
