@@ -73,5 +73,7 @@ namespace snakePlateau
         {
             // Affiche les nouvelles infos à chaque tour
         }
+
+
     }
 }
