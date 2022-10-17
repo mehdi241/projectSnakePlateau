@@ -61,24 +61,6 @@ namespace snakePlateau.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à 1;ladder;12
-        ///4;ladder;16
-        ///17;ladder;21
-        ///18;snake;5
-        ///22;snake;3
-        ///23;ladder;29
-        ///26;snake;12
-        ///27;snake;14
-        ///31;snake;19
-        ///32;Win.
-        /// </summary>
-        internal static string idsCaseAEffet {
-            get {
-                return ResourceManager.GetString("idsCaseAEffet", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap dragon_red {
@@ -95,6 +77,24 @@ namespace snakePlateau.Properties {
             get {
                 object obj = ResourceManager.GetObject("frog_green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 1;ladder;12
+        ///4;ladder;16
+        ///17;ladder;21
+        ///18;snake;5
+        ///22;snake;3
+        ///23;ladder;29
+        ///26;snake;12
+        ///27;snake;14
+        ///31;snake;19
+        ///32;Win.
+        /// </summary>
+        internal static string idsCaseAEffet {
+            get {
+                return ResourceManager.GetString("idsCaseAEffet", resourceCulture);
             }
         }
         

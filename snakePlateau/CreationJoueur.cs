@@ -12,7 +12,8 @@ namespace snakePlateau
 {
     public partial class CreationJoueur : Form
     {
-        decimal nbJoueurs;
+        public decimal nbJoueurs;
+        public string playerName;
         public CreationJoueur()
         {
             InitializeComponent();
@@ -20,12 +21,6 @@ namespace snakePlateau
 
         private void CreationJoueur_Load(object sender, EventArgs e)
         {
-            
-        }
-
-        private void nudJoueursNombre_ValueChanged(object sender, EventArgs e)
-        {
-           // nbJoueurs = nudJoueursNombre.Value; // Non fonctionnel
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
@@ -37,7 +32,14 @@ namespace snakePlateau
                 composant_Joueur.Location = new Point(250,30 + i*60);
                 composant_Joueur.Nom = $"Joueur {i+1}";
                 this.Controls.Add(composant_Joueur);
-            }   
+                //string name = composant_Joueur.textBox1.Text; // Je ne sais pas comment récupérer le text du textBox de la class composant_joueur /* Mehdi Calanducci
+            }
+            nbJoueurs = Convert.ToInt32(a.Tag);
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            // Cliquer récupères les noms des joueurs dans une liste utilisable dans la forme principale
         }
     }
 }

@@ -27,12 +27,19 @@ namespace snakePlateau
             if (response == DialogResult.OK)
             {
                 // Assignation des images au joueurs
-<<<<<<< HEAD
-                //Joueur j = new Joueur("Jeff"); // debug
-                //nbJoueurs = cj.nbJoueurs;
-=======
-                Joueur j = new Joueur("Jeff"); // debug
-                bool victory = false;
+                // bool victory = false; // Boolean de vérification de victoire
+                for (int i = 0; i < cj.nbJoueurs; i++)
+                {
+                    Joueur j = new Joueur(cj.Name, i);
+                    nbJoueurs++;
+                    // Creation PictureBox des joueurs
+                    PictureBox pb = new PictureBox();
+                    pb.Name = "prbJoueur" + i;
+                    pb.Dock = DockStyle.Fill;
+                    pb.Location = new Point(0, 0); // Position encore expérimentale
+                    pb.Size = new Size(10, 10);
+                    Controls.Add(pb);
+                }
             }
         }
 
@@ -62,6 +69,9 @@ namespace snakePlateau
             j0.Step = step; // debug
         }
 
-
+        public void UpdateView()
+        {
+            // Affiche les nouvelles infos à chaque tour
+        }
     }
 }

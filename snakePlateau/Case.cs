@@ -25,7 +25,7 @@ namespace snakePlateau
         {
             cases.Add(this);
             Index = cases.Count() - 1;
-            Effect = File.ReadAllLines("C:\\Users\\Lucien.Flr\\Desktop\\premierSemestre\\m426\\ids_CaseAEffect.txt")[cases.Count() - 1].Split(';')[1]; 
+            Effect = File.ReadAllLines(/*"C:\\Users\\Lucien.Flr\\Desktop\\premierSemestre\\m426\\ids_CaseAEffect.txt"*/"F:\\Users\\mehdi.clndc\\Desktop\\projPlateau\\ids_CaseAEffect.txt")[cases.Count() - 1].Split(';')[1]; 
         }
     }
 }
