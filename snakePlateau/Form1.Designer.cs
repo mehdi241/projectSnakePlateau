@@ -35,6 +35,31 @@
             this.btnQuit = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.prbJoueur1 = new System.Windows.Forms.PictureBox();
+            this.prbJoueur2 = new System.Windows.Forms.PictureBox();
+            this.prbJoueur3 = new System.Windows.Forms.PictureBox();
+            this.case32 = new snakePlateau.Case();
+            this.case31 = new snakePlateau.Case();
+            this.case30 = new snakePlateau.Case();
+            this.case29 = new snakePlateau.Case();
+            this.case28 = new snakePlateau.Case();
+            this.case27 = new snakePlateau.Case();
+            this.case26 = new snakePlateau.Case();
+            this.case25 = new snakePlateau.Case();
+            this.case24 = new snakePlateau.Case();
+            this.case23 = new snakePlateau.Case();
+            this.case22 = new snakePlateau.Case();
+            this.case21 = new snakePlateau.Case();
+            this.case20 = new snakePlateau.Case();
+            this.case19 = new snakePlateau.Case();
+            this.case18 = new snakePlateau.Case();
+            this.case17 = new snakePlateau.Case();
+            this.case16 = new snakePlateau.Case();
+            this.case15 = new snakePlateau.Case();
+            this.case14 = new snakePlateau.Case();
+            this.case13 = new snakePlateau.Case();
+            this.case12 = new snakePlateau.Case();
+            this.case11 = new snakePlateau.Case();
             this.case10 = new snakePlateau.Case();
             this.case9 = new snakePlateau.Case();
             this.case8 = new snakePlateau.Case();
@@ -45,29 +70,12 @@
             this.case3 = new snakePlateau.Case();
             this.case2 = new snakePlateau.Case();
             this.case1 = new snakePlateau.Case();
-            this.case11 = new snakePlateau.Case();
-            this.case12 = new snakePlateau.Case();
-            this.case13 = new snakePlateau.Case();
-            this.case14 = new snakePlateau.Case();
-            this.case15 = new snakePlateau.Case();
-            this.case16 = new snakePlateau.Case();
-            this.case17 = new snakePlateau.Case();
-            this.case18 = new snakePlateau.Case();
-            this.case19 = new snakePlateau.Case();
-            this.case20 = new snakePlateau.Case();
-            this.case21 = new snakePlateau.Case();
-            this.case22 = new snakePlateau.Case();
-            this.case23 = new snakePlateau.Case();
-            this.case24 = new snakePlateau.Case();
-            this.case25 = new snakePlateau.Case();
-            this.case26 = new snakePlateau.Case();
-            this.case27 = new snakePlateau.Case();
-            this.case28 = new snakePlateau.Case();
-            this.case29 = new snakePlateau.Case();
-            this.case30 = new snakePlateau.Case();
-            this.case31 = new snakePlateau.Case();
-            this.case32 = new snakePlateau.Case();
+            this.prbJoueur4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prbJoueur1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prbJoueur2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prbJoueur3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prbJoueur4)).BeginInit();
             this.SuspendLayout();
             // 
             // lblInfoTour
@@ -136,6 +144,228 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // prbJoueur1
+            // 
+            this.prbJoueur1.Location = new System.Drawing.Point(600, 406);
+            this.prbJoueur1.Name = "prbJoueur1";
+            this.prbJoueur1.Size = new System.Drawing.Size(40, 40);
+            this.prbJoueur1.TabIndex = 29;
+            this.prbJoueur1.TabStop = false;
+            // 
+            // prbJoueur2
+            // 
+            this.prbJoueur2.Location = new System.Drawing.Point(600, 451);
+            this.prbJoueur2.Name = "prbJoueur2";
+            this.prbJoueur2.Size = new System.Drawing.Size(40, 40);
+            this.prbJoueur2.TabIndex = 30;
+            this.prbJoueur2.TabStop = false;
+            // 
+            // prbJoueur3
+            // 
+            this.prbJoueur3.Location = new System.Drawing.Point(646, 406);
+            this.prbJoueur3.Name = "prbJoueur3";
+            this.prbJoueur3.Size = new System.Drawing.Size(40, 40);
+            this.prbJoueur3.TabIndex = 31;
+            this.prbJoueur3.TabStop = false;
+            // 
+            // case32
+            // 
+            this.case32.Effect = "ladder";
+            this.case32.Index = 0;
+            this.case32.Location = new System.Drawing.Point(169, 70);
+            this.case32.Name = "case32";
+            this.case32.Size = new System.Drawing.Size(63, 67);
+            this.case32.TabIndex = 28;
+            // 
+            // case31
+            // 
+            this.case31.Effect = "ladder";
+            this.case31.Index = 0;
+            this.case31.Location = new System.Drawing.Point(232, 71);
+            this.case31.Name = "case31";
+            this.case31.Size = new System.Drawing.Size(73, 67);
+            this.case31.TabIndex = 27;
+            // 
+            // case30
+            // 
+            this.case30.Effect = "ladder";
+            this.case30.Index = 0;
+            this.case30.Location = new System.Drawing.Point(304, 71);
+            this.case30.Name = "case30";
+            this.case30.Size = new System.Drawing.Size(73, 67);
+            this.case30.TabIndex = 27;
+            // 
+            // case29
+            // 
+            this.case29.Effect = "ladder";
+            this.case29.Index = 0;
+            this.case29.Location = new System.Drawing.Point(385, 73);
+            this.case29.Name = "case29";
+            this.case29.Size = new System.Drawing.Size(73, 67);
+            this.case29.TabIndex = 27;
+            // 
+            // case28
+            // 
+            this.case28.Effect = "ladder";
+            this.case28.Index = 0;
+            this.case28.Location = new System.Drawing.Point(470, 72);
+            this.case28.Name = "case28";
+            this.case28.Size = new System.Drawing.Size(73, 67);
+            this.case28.TabIndex = 27;
+            // 
+            // case27
+            // 
+            this.case27.Effect = "ladder";
+            this.case27.Index = 0;
+            this.case27.Location = new System.Drawing.Point(549, 72);
+            this.case27.Name = "case27";
+            this.case27.Size = new System.Drawing.Size(73, 67);
+            this.case27.TabIndex = 27;
+            // 
+            // case26
+            // 
+            this.case26.Effect = "ladder";
+            this.case26.Index = 0;
+            this.case26.Location = new System.Drawing.Point(600, 114);
+            this.case26.Name = "case26";
+            this.case26.Size = new System.Drawing.Size(73, 67);
+            this.case26.TabIndex = 26;
+            // 
+            // case25
+            // 
+            this.case25.Effect = "ladder";
+            this.case25.Index = 0;
+            this.case25.Location = new System.Drawing.Point(543, 164);
+            this.case25.Name = "case25";
+            this.case25.Size = new System.Drawing.Size(73, 67);
+            this.case25.TabIndex = 26;
+            // 
+            // case24
+            // 
+            this.case24.Effect = "ladder";
+            this.case24.Index = 0;
+            this.case24.Location = new System.Drawing.Point(468, 165);
+            this.case24.Name = "case24";
+            this.case24.Size = new System.Drawing.Size(73, 67);
+            this.case24.TabIndex = 26;
+            // 
+            // case23
+            // 
+            this.case23.Effect = "ladder";
+            this.case23.Index = 0;
+            this.case23.Location = new System.Drawing.Point(393, 164);
+            this.case23.Name = "case23";
+            this.case23.Size = new System.Drawing.Size(73, 67);
+            this.case23.TabIndex = 25;
+            // 
+            // case22
+            // 
+            this.case22.Effect = "ladder";
+            this.case22.Index = 0;
+            this.case22.Location = new System.Drawing.Point(318, 164);
+            this.case22.Name = "case22";
+            this.case22.Size = new System.Drawing.Size(73, 67);
+            this.case22.TabIndex = 25;
+            // 
+            // case21
+            // 
+            this.case21.Effect = "ladder";
+            this.case21.Index = 0;
+            this.case21.Location = new System.Drawing.Point(240, 164);
+            this.case21.Name = "case21";
+            this.case21.Size = new System.Drawing.Size(78, 66);
+            this.case21.TabIndex = 25;
+            // 
+            // case20
+            // 
+            this.case20.Effect = "ladder";
+            this.case20.Index = 0;
+            this.case20.Location = new System.Drawing.Point(158, 164);
+            this.case20.Name = "case20";
+            this.case20.Size = new System.Drawing.Size(73, 67);
+            this.case20.TabIndex = 25;
+            // 
+            // case19
+            // 
+            this.case19.Effect = "ladder";
+            this.case19.Index = 0;
+            this.case19.Location = new System.Drawing.Point(109, 216);
+            this.case19.Name = "case19";
+            this.case19.Size = new System.Drawing.Size(73, 67);
+            this.case19.TabIndex = 24;
+            // 
+            // case18
+            // 
+            this.case18.Effect = "ladder";
+            this.case18.Index = 0;
+            this.case18.Location = new System.Drawing.Point(184, 250);
+            this.case18.Name = "case18";
+            this.case18.Size = new System.Drawing.Size(73, 67);
+            this.case18.TabIndex = 23;
+            // 
+            // case17
+            // 
+            this.case17.Effect = "ladder";
+            this.case17.Index = 0;
+            this.case17.Location = new System.Drawing.Point(263, 250);
+            this.case17.Name = "case17";
+            this.case17.Size = new System.Drawing.Size(73, 67);
+            this.case17.TabIndex = 22;
+            // 
+            // case16
+            // 
+            this.case16.Effect = "ladder";
+            this.case16.Index = 0;
+            this.case16.Location = new System.Drawing.Point(335, 250);
+            this.case16.Name = "case16";
+            this.case16.Size = new System.Drawing.Size(88, 67);
+            this.case16.TabIndex = 21;
+            // 
+            // case15
+            // 
+            this.case15.Effect = "ladder";
+            this.case15.Index = 0;
+            this.case15.Location = new System.Drawing.Point(427, 250);
+            this.case15.Name = "case15";
+            this.case15.Size = new System.Drawing.Size(78, 67);
+            this.case15.TabIndex = 20;
+            // 
+            // case14
+            // 
+            this.case14.Effect = "ladder";
+            this.case14.Index = 0;
+            this.case14.Location = new System.Drawing.Point(504, 249);
+            this.case14.Name = "case14";
+            this.case14.Size = new System.Drawing.Size(78, 67);
+            this.case14.TabIndex = 19;
+            // 
+            // case13
+            // 
+            this.case13.Effect = "ladder";
+            this.case13.Index = 0;
+            this.case13.Location = new System.Drawing.Point(591, 268);
+            this.case13.Name = "case13";
+            this.case13.Size = new System.Drawing.Size(78, 67);
+            this.case13.TabIndex = 18;
+            // 
+            // case12
+            // 
+            this.case12.Effect = "ladder";
+            this.case12.Index = 0;
+            this.case12.Location = new System.Drawing.Point(544, 335);
+            this.case12.Name = "case12";
+            this.case12.Size = new System.Drawing.Size(70, 65);
+            this.case12.TabIndex = 17;
+            // 
+            // case11
+            // 
+            this.case11.Effect = "ladder";
+            this.case11.Index = 0;
+            this.case11.Location = new System.Drawing.Point(458, 334);
+            this.case11.Name = "case11";
+            this.case11.Size = new System.Drawing.Size(78, 67);
+            this.case11.TabIndex = 16;
             // 
             // case10
             // 
@@ -227,209 +457,23 @@
             this.case1.Size = new System.Drawing.Size(84, 67);
             this.case1.TabIndex = 7;
             // 
-            // case11
+            // prbJoueur4
             // 
-            this.case11.Effect = "ladder";
-            this.case11.Index = 0;
-            this.case11.Location = new System.Drawing.Point(458, 334);
-            this.case11.Name = "case11";
-            this.case11.Size = new System.Drawing.Size(78, 67);
-            this.case11.TabIndex = 16;
-            // 
-            // case12
-            // 
-            this.case12.Effect = "ladder";
-            this.case12.Index = 0;
-            this.case12.Location = new System.Drawing.Point(544, 335);
-            this.case12.Name = "case12";
-            this.case12.Size = new System.Drawing.Size(70, 65);
-            this.case12.TabIndex = 17;
-            // 
-            // case13
-            // 
-            this.case13.Effect = "ladder";
-            this.case13.Index = 0;
-            this.case13.Location = new System.Drawing.Point(591, 268);
-            this.case13.Name = "case13";
-            this.case13.Size = new System.Drawing.Size(78, 67);
-            this.case13.TabIndex = 18;
-            // 
-            // case14
-            // 
-            this.case14.Effect = "ladder";
-            this.case14.Index = 0;
-            this.case14.Location = new System.Drawing.Point(504, 249);
-            this.case14.Name = "case14";
-            this.case14.Size = new System.Drawing.Size(78, 67);
-            this.case14.TabIndex = 19;
-            // 
-            // case15
-            // 
-            this.case15.Effect = "ladder";
-            this.case15.Index = 0;
-            this.case15.Location = new System.Drawing.Point(427, 250);
-            this.case15.Name = "case15";
-            this.case15.Size = new System.Drawing.Size(78, 67);
-            this.case15.TabIndex = 20;
-            // 
-            // case16
-            // 
-            this.case16.Effect = "ladder";
-            this.case16.Index = 0;
-            this.case16.Location = new System.Drawing.Point(335, 250);
-            this.case16.Name = "case16";
-            this.case16.Size = new System.Drawing.Size(88, 67);
-            this.case16.TabIndex = 21;
-            // 
-            // case17
-            // 
-            this.case17.Effect = "ladder";
-            this.case17.Index = 0;
-            this.case17.Location = new System.Drawing.Point(263, 250);
-            this.case17.Name = "case17";
-            this.case17.Size = new System.Drawing.Size(73, 67);
-            this.case17.TabIndex = 22;
-            // 
-            // case18
-            // 
-            this.case18.Effect = "ladder";
-            this.case18.Index = 0;
-            this.case18.Location = new System.Drawing.Point(184, 250);
-            this.case18.Name = "case18";
-            this.case18.Size = new System.Drawing.Size(73, 67);
-            this.case18.TabIndex = 23;
-            // 
-            // case19
-            // 
-            this.case19.Effect = "ladder";
-            this.case19.Index = 0;
-            this.case19.Location = new System.Drawing.Point(109, 216);
-            this.case19.Name = "case19";
-            this.case19.Size = new System.Drawing.Size(73, 67);
-            this.case19.TabIndex = 24;
-            // 
-            // case20
-            // 
-            this.case20.Effect = "ladder";
-            this.case20.Index = 0;
-            this.case20.Location = new System.Drawing.Point(158, 164);
-            this.case20.Name = "case20";
-            this.case20.Size = new System.Drawing.Size(73, 67);
-            this.case20.TabIndex = 25;
-            // 
-            // case21
-            // 
-            this.case21.Effect = "ladder";
-            this.case21.Index = 0;
-            this.case21.Location = new System.Drawing.Point(240, 164);
-            this.case21.Name = "case21";
-            this.case21.Size = new System.Drawing.Size(78, 66);
-            this.case21.TabIndex = 25;
-            // 
-            // case22
-            // 
-            this.case22.Effect = "ladder";
-            this.case22.Index = 0;
-            this.case22.Location = new System.Drawing.Point(318, 164);
-            this.case22.Name = "case22";
-            this.case22.Size = new System.Drawing.Size(73, 67);
-            this.case22.TabIndex = 25;
-            // 
-            // case23
-            // 
-            this.case23.Effect = "ladder";
-            this.case23.Index = 0;
-            this.case23.Location = new System.Drawing.Point(393, 164);
-            this.case23.Name = "case23";
-            this.case23.Size = new System.Drawing.Size(73, 67);
-            this.case23.TabIndex = 25;
-            // 
-            // case24
-            // 
-            this.case24.Effect = "ladder";
-            this.case24.Index = 0;
-            this.case24.Location = new System.Drawing.Point(468, 165);
-            this.case24.Name = "case24";
-            this.case24.Size = new System.Drawing.Size(73, 67);
-            this.case24.TabIndex = 26;
-            // 
-            // case25
-            // 
-            this.case25.Effect = "ladder";
-            this.case25.Index = 0;
-            this.case25.Location = new System.Drawing.Point(543, 164);
-            this.case25.Name = "case25";
-            this.case25.Size = new System.Drawing.Size(73, 67);
-            this.case25.TabIndex = 26;
-            // 
-            // case26
-            // 
-            this.case26.Effect = "ladder";
-            this.case26.Index = 0;
-            this.case26.Location = new System.Drawing.Point(600, 114);
-            this.case26.Name = "case26";
-            this.case26.Size = new System.Drawing.Size(73, 67);
-            this.case26.TabIndex = 26;
-            // 
-            // case27
-            // 
-            this.case27.Effect = "ladder";
-            this.case27.Index = 0;
-            this.case27.Location = new System.Drawing.Point(549, 72);
-            this.case27.Name = "case27";
-            this.case27.Size = new System.Drawing.Size(73, 67);
-            this.case27.TabIndex = 27;
-            // 
-            // case28
-            // 
-            this.case28.Effect = "ladder";
-            this.case28.Index = 0;
-            this.case28.Location = new System.Drawing.Point(470, 72);
-            this.case28.Name = "case28";
-            this.case28.Size = new System.Drawing.Size(73, 67);
-            this.case28.TabIndex = 27;
-            // 
-            // case29
-            // 
-            this.case29.Effect = "ladder";
-            this.case29.Index = 0;
-            this.case29.Location = new System.Drawing.Point(385, 73);
-            this.case29.Name = "case29";
-            this.case29.Size = new System.Drawing.Size(73, 67);
-            this.case29.TabIndex = 27;
-            // 
-            // case30
-            // 
-            this.case30.Effect = "ladder";
-            this.case30.Index = 0;
-            this.case30.Location = new System.Drawing.Point(304, 71);
-            this.case30.Name = "case30";
-            this.case30.Size = new System.Drawing.Size(73, 67);
-            this.case30.TabIndex = 27;
-            // 
-            // case31
-            // 
-            this.case31.Effect = "ladder";
-            this.case31.Index = 0;
-            this.case31.Location = new System.Drawing.Point(232, 71);
-            this.case31.Name = "case31";
-            this.case31.Size = new System.Drawing.Size(73, 67);
-            this.case31.TabIndex = 27;
-            // 
-            // case32
-            // 
-            this.case32.Effect = "ladder";
-            this.case32.Index = 0;
-            this.case32.Location = new System.Drawing.Point(169, 70);
-            this.case32.Name = "case32";
-            this.case32.Size = new System.Drawing.Size(63, 67);
-            this.case32.TabIndex = 28;
+            this.prbJoueur4.Location = new System.Drawing.Point(646, 452);
+            this.prbJoueur4.Name = "prbJoueur4";
+            this.prbJoueur4.Size = new System.Drawing.Size(40, 40);
+            this.prbJoueur4.TabIndex = 32;
+            this.prbJoueur4.TabStop = false;
             // 
             // frmSnakeBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(755, 741);
+            this.Controls.Add(this.prbJoueur4);
+            this.Controls.Add(this.prbJoueur3);
+            this.Controls.Add(this.prbJoueur2);
+            this.Controls.Add(this.prbJoueur1);
             this.Controls.Add(this.case32);
             this.Controls.Add(this.case31);
             this.Controls.Add(this.case30);
@@ -475,6 +519,10 @@
             this.Text = "Jeu de Plateau Snake";
             this.Load += new System.EventHandler(this.frmSnakeBoard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prbJoueur1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prbJoueur2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prbJoueur3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prbJoueur4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -521,6 +569,10 @@
         private Case case30;
         private Case case31;
         private Case case32;
+        private System.Windows.Forms.PictureBox prbJoueur1;
+        private System.Windows.Forms.PictureBox prbJoueur2;
+        private System.Windows.Forms.PictureBox prbJoueur3;
+        private System.Windows.Forms.PictureBox prbJoueur4;
     }
 }
 

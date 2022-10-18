@@ -14,7 +14,7 @@ namespace snakePlateau
     internal class Joueur : IDisposable
     {
         Random rnd = new Random();
-        static List<Joueur> joueurs = new List<Joueur>();
+        public List<Joueur> joueurs = new List<Joueur>();
         private string _name;
         private int _number;
         private int _step;
