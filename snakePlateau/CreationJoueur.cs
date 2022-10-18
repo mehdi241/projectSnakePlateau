@@ -1,4 +1,5 @@
-﻿using System;
+﻿using snakePlateau.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,10 +15,15 @@ namespace snakePlateau
     {
         public decimal nbJoueurs;
         public string playerName;
-        List<string> image = new List<string>();
+        List<Image> image = new List<Image>();
+        
         public CreationJoueur()
         {
             InitializeComponent();
+            image.Add(Resources.monkey_brown);
+            image.Add(Resources.frog_green);
+            image.Add(Resources.mouse_blue);
+            image.Add(Resources.pig_rose);
         }
 
         private void CreationJoueur_Load(object sender, EventArgs e)
@@ -33,7 +39,7 @@ namespace snakePlateau
                 composant_joueur composant_Joueur = new composant_joueur();
                 composant_Joueur.Location = new Point(250,30 + i*60);
                 composant_Joueur.Nom = $"Joueur {i+1}";
-                composant_Joueur.Img = "";
+                composant_Joueur.Img = image[i];
                 this.Controls.Add(composant_Joueur);
                 string name = composant_Joueur.Nom;
             }

@@ -20,7 +20,7 @@ namespace snakePlateau
         }
 
         public string Nom { get => textBox1.Text; set => textBox1.Text = value; }
-        public string Img { get => pictureBox1.ImageLocation; set => pictureBox1.ImageLocation = value; }
+        public Image Img { get => pictureBox1.Image; set => pictureBox1.Image = value; }
 
         private void composant_joueur_Load(object sender, EventArgs e)
         {
