@@ -23,7 +23,8 @@ namespace snakePlateau
         public Image Img { get => pictureBox1.Image; set => pictureBox1.Image = value; }
 
         private void composant_joueur_Load(object sender, EventArgs e)
-        {
+        { 
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

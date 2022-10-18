@@ -15,7 +15,9 @@ namespace snakePlateau
     {
         public decimal nbJoueurs;
         public string playerName;
-        List<Image> image = new List<Image>();
+        static List<Image> image = new List<Image>();
+
+        List<Joueur> joueurList = new List<Joueur>();
         
         public CreationJoueur()
         {
@@ -31,16 +33,16 @@ namespace snakePlateau
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            
+        {           
+            groupBox1.Controls.Clear();
             RadioButton a = sender as RadioButton;
             for(int i = 0; i< Convert.ToInt32(a.Tag); i++)
             {
                 composant_joueur composant_Joueur = new composant_joueur();
-                composant_Joueur.Location = new Point(250,30 + i*60);
+                composant_Joueur.Location = new Point(80,30 + i*60);
                 composant_Joueur.Nom = $"Joueur {i+1}";
                 composant_Joueur.Img = image[i];
-                this.Controls.Add(composant_Joueur);
+                groupBox1.Controls.Add(composant_Joueur);
                 string name = composant_Joueur.Nom;
             }
             nbJoueurs = Convert.ToInt32(a.Tag);
@@ -48,7 +50,7 @@ namespace snakePlateau
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            // Cliquer récupères les noms des joueurs dans une liste utilisable dans la forme principale
+            
         }
     }
 }
